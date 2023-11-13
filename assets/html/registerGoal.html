@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="/assets/style/styles.css">
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <main class='form-container'>
+        <form action="POST">
+            <div class="title">
+                <a href="/index.html"><i class='bx bx-chevron-left'></i></a>
+                <h2 class="">Despesas</h2>
+            </div>
+
+            <div class="input-container">
+
+                <label for="username">Categoria</label>
+                <div class="input">
+                    <i class='bx bx-category'></i>
+                    <select name="Categorias" class='categorias-select'>
+                        <option disabled selected value="">Selecione a categoria</option>
+                        <option value="Lazer">Lazer</option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Entreterimento">Entreterimento</option>
+                        <option value="Contas">Contas</option>
+                        <option value="Alimentação">Alimentação</option>
+                        <option value="Manutenção">Manutenção</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="input-container">
+                <label for="email">Descrição</label>
+                <div class="input">
+                    <i class='bx bx-pencil'></i>
+                    <textarea name="description" placeholder="Descrição da despesa"></textarea>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <label for="amout">Quantia</label>
+                <div class="input">
+                    <i class='bx bxs-low-vision' onclick="showPassword()"></i>
+                    <input type="number" step="0.01" name="amount" placeholder="Quantia gasta">
+                </div>
+            </div>
+
+            <div id="btn">
+                <button type="submit">Registrar</button>
+               
+            </div>
+
+        </form>
+    </main>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
+<script src="script.js"></script>
+</body>
+
+</html>

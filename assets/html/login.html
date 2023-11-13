@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../style/styles.css">
+
+    <title>Login CashFlow</title>
+</head>
+
+    <main class="form-container">
+        <form action="">
+            <div class="title">
+                <a href="/index.html"><i class='bx bx-chevron-left'></i></a>
+                <h2 class="">Login</h2>
+            </div>
+
+            <div class="input-container">
+                <label for="username">Email</label>
+                <div class="input">
+                    <i class='bx bx-envelope'></i>
+                    <input id="email" type="email" name="email">
+                </div>
+            </div>
+
+            <div class="input-container">
+            <label for="username">Senha</label>
+            <div class="input">
+                <i onclick="showPassword()" class='bx bxs-low-vision'></i>
+                <input id="senha" type="password" name="senha">
+            </div>
+        </div>
+            <div id="btn">
+                <button type="submit">Entrar</button>
+                <p>Ainda não tem uma conta? <a href="./register.html">Registre-se</a> </p>
+            </div>
+
+        </form>
+    </main>
+    <script src="/script.js"></script>
+</body>
+
+</html>
